@@ -12,8 +12,10 @@ function search() {
         .then(matches => {
             if (frame !== "any") {
                 let frameregex;
-                if (frame == 1) {
-                    frameregex = /^.*JONES_[^B].*$/gm
+                if (frame == 1 && selected) {
+                    frameregex = /^.*JONESZ_[^B].*$/gm;
+                } else if (frame == 1 && !selected) {
+                    frameregex = /^.*JONES_[^B].*$/gm;
                 } else {
                     frameregex = new RegExp("^.*[^B]" + "B".repeat(Number(frame - 1)) + "[^B].*$", "gm");
                 }
