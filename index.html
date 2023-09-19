@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="search.js"></script>
+</head>
+
+<body>
+    <h1>
+        Welcome to the Carpetless Dictionary Search!
+    </h1>
+    <h3>Starting Position</h3>
+    <select name="position" id="pos">
+        <option value="any">Any starting position</option>
+        <option value="5406">5406</option>
+        <option value="5418">5418</option>
+        <option value="5426">5426</option>
+        <option value="5430">5430</option>
+        <option value="5432">5432</option>
+        <option value="5444">5444</option>
+        <option value="5452">5452</option>
+        <option value="5456">5456</option>
+        <option value="5478">5478</option>
+    </select>
+    <h3>Wallkick Frame</h3>
+    <select name="frame" id="frame">
+        <option value="any">Any frame</option>
+        <option value="1">1st frame</option>
+        <option value="2">2nd frame</option>
+        <option value="3">3rd frame</option>
+        <option value="4">4th frame</option>
+        <option value="5">5th frame</option>
+    </select>
+    <h3>Number of Stick Adjustments</h3>
+    <select name="sticknum" id="stick">
+        <option value="any">Any number of stick adjustments</option>
+        <option value="2">Two stick adjustments</option>
+        <option value="3">Three stick adjustments</option>
+        <option value="4">Four stick adjustments</option>
+        <option value="5">Five stick adjustments</option>
+    </select>
+
+    <h3>Searh for Setups</h3>
+    <button type="button" onclick="search()">Let's go!</button>
+
+    <h3>Setup List</h3>
+    <textarea id="setups" name="setups" rows="4" cols="100" readonly="true">Click the button to search.</textarea>
+</body>
+
+</html>
